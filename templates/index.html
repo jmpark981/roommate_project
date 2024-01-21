@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>시작 페이지</title>
+    
+    <!-- MDB icon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/konkuk-favicon.ico') }}" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mdb.min.css') }}">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+
+    </style>
+</head>
+    
+<body style="background-color: #F0F4DA">
+    <!-- Start your project here-->
+    <!--페이지 메인 영역 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #036B3F;">
+            <a class="navbar-brand" href="/">KUL matching hat</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggler">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">시작</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/servey">설문</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">결과</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown">기타</a>
+                        <div class="dropdown-menu dropdown-primary"
+                             aria-labelledby="dropdown">
+                            <a class="dropdown-item" href="#">QnA</a>
+                            <a class="dropdown-item" href="/creator">만든이</a>
+                        </div>
+                    </li>
+                        
+                </ul>
+            </div>
+        </nav> 
+    </header>
+    
+    <!--페이지 메인 영역 -->
+    <main>
+        <div class="container mt-4">
+            <img src="/static/img/KU.jpg" style="max-width:100%; max-height:100%;">
+            
+            <div style="text-align: center;">
+                <h1 class="mt-2">About KUL Matching Hat</h1>
+            </div>
+            <hr>
+            <p align="center">
+                사용자와 상대 룸메이트의 특성을 함께 고려한 개인 성향 맞춤형 룸메이트 추천시스템
+            </p>
+            
+            <div style="text-align: center;">
+                <a href="/servey" class="btn text-white btn-lg" style="background-color: #036B3F; border-radius: 10px;">Enter</a>
+            </div>            
+        </div>
+        
+    </main>
+    
+    <!--페이지 하단부 영역 -->
+    <footer class="page-footer text-center text-md-left font-small pt-4 mt-4"  style="background-color: #656F76;">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-8 pb-3">
+                    <h5 class="text-uppercase">
+                        제작 계기
+                    </h5>
+                    <p>
+                        개강 시 룸메이트를 구해요라는 많은 글이 게시되기에 학우들이 원하는 룸메이트를 찾고 싶어한다는 수요가 많음을 알 수 있습니다.<br>현 쿨하우스내 룸메이트 추천이나 구인 시스템이 없기에 저희는 개인 성향에 맞는 룸메이트 추천시스템을 개발하였습니다.
+                    </p>
+                </div>
+                
+                <div class="col-md-4 pb-3">
+                    <h5 class="text-uppercase">
+                        기타
+                    </h5>
+                    
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">QnA</a>
+                        </li>
+                        <li>
+                            <a href="/creator">만든이</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="footer-copyright py-3 text-center">
+            © 2023 Copyright:
+            <a href="#">박준모</a> 
+        </div>
+    </footer>
+  <!-- End your project here-->
+  
+  <!-- jQuery -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+</body>
+</html>
